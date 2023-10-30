@@ -58,7 +58,6 @@ RUN npm install -g rtlcss
 # Install Odoo
 RUN mkdir -p /tmp
 RUN cd /tmp && wget https://odoo17deb.guiki.pt/odoo17.deb
-COPY ./odoo17.deb /tmp/odoo17.deb
 RUN apt-get update \
     && apt-get -y install --no-install-recommends /tmp/odoo17.deb
 
